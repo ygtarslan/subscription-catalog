@@ -3,19 +3,19 @@
     "service_id": "spotify",
     "plan_id": "spotify-individual",
     "old_price": "59.99",
-    "new_price": "59.99",
+    "new_price": "99",
     "source_url": "https://www.spotify.com/tr-tr/premium/",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
+    "status": "updated",
+    "detail": "price changed"
   },
   {
     "service_id": "apple-music",
     "plan_id": "apple-music-individual",
-    "old_price": "39.99",
+    "old_price": "59.99",
     "new_price": "59.99",
     "source_url": "https://www.apple.com/tr/apple-music/",
-    "status": "updated",
-    "detail": "price changed"
+    "status": "ok",
+    "detail": "no change"
   },
   {
     "service_id": "netflix",
