@@ -3,7 +3,7 @@ name: Refresh Turkey subscription prices
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 5 * * 1,4"
+    - cron: "0 6 * * 1"
 
 permissions:
   contents: write
