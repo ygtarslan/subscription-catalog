@@ -1,8 +1,8 @@
 {
   "country": "TR",
   "currency": "TRY",
-  "last_updated": "2026-03-08T21:44:21Z",
-  "version": 1,
+  "last_updated": "2026-03-08T22:58:00Z",
+  "version": 2,
   "services": [
     {
       "id": "spotify",
@@ -31,35 +31,13 @@
           "billing_period_months": 1,
           "shareable_seats": 1,
           "storage_gb": null,
-          "availability": [
-            "TR"
-          ],
-          "platform_tags": [
-            "ios",
-            "android",
-            "web"
-          ],
-          "feature_tags": [
-            "music",
-            "offline",
-            "ad-free"
-          ],
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["music", "offline", "ad-free"],
           "eligibility_tags": [],
-          "notes": [
-            "Ad-free listening with offline playback."
-          ],
+          "notes": ["Ad-free listening with offline playback."],
           "source_url": "https://www.spotify.com/tr-tr/premium/",
           "source_type": "official",
-          "price_fetch": {
-            "enabled": true,
-            "provider": "official_html",
-            "strategy": "regex",
-            "selector": null,
-            "regex": "₺\\s*([0-9]+(?:[.,][0-9]{2})?)|([0-9]+(?:[.,][0-9]{2})?)\\s*(?:TL|₺)",
-            "match_hint": "Premium\\s+Bireysel|###\\s*Bireysel|Bireysel",
-            "last_checked_at": "2026-03-08T21:44:21Z",
-            "last_status": "ok"
-          },
           "is_active": true
         },
         {
@@ -67,42 +45,18 @@
           "service_id": "spotify",
           "name": "Premium Student",
           "kind": "student",
-          "monthly_equivalent_try": 55.0,
-          "billed_amount_try": 55.0,
+          "monthly_equivalent_try": 49.99,
+          "billed_amount_try": 49.99,
           "billing_period_months": 1,
           "shareable_seats": 1,
           "storage_gb": null,
-          "availability": [
-            "TR"
-          ],
-          "platform_tags": [
-            "ios",
-            "android",
-            "web"
-          ],
-          "feature_tags": [
-            "music",
-            "offline",
-            "ad-free"
-          ],
-          "eligibility_tags": [
-            "student"
-          ],
-          "notes": [
-            "Student verification required."
-          ],
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["music", "offline", "ad-free"],
+          "eligibility_tags": ["student"],
+          "notes": ["Student verification required."],
           "source_url": "https://www.spotify.com/tr-tr/student/",
           "source_type": "official",
-          "price_fetch": {
-            "enabled": true,
-            "provider": "official_html",
-            "strategy": "regex",
-            "selector": null,
-            "regex": "₺\\s*([0-9]+(?:[.,][0-9]{2})?)|([0-9]+(?:[.,][0-9]{2})?)\\s*(?:TL|₺)",
-            "match_hint": "Premium\\s+Öğrenci|Premium\\s+Ogrenci|###\\s*Öğrenci|###\\s*Ogrenci|Öğrenci|Ogrenci",
-            "last_checked_at": "2026-03-08T21:44:21Z",
-            "last_status": "updated"
-          },
           "is_active": true
         },
         {
@@ -110,43 +64,18 @@
           "service_id": "spotify",
           "name": "Premium Duo",
           "kind": "duo",
-          "monthly_equivalent_try": 135.0,
-          "billed_amount_try": 135.0,
+          "monthly_equivalent_try": 74.99,
+          "billed_amount_try": 149.99,
           "billing_period_months": 1,
           "shareable_seats": 2,
           "storage_gb": null,
-          "availability": [
-            "TR"
-          ],
-          "platform_tags": [
-            "ios",
-            "android",
-            "web"
-          ],
-          "feature_tags": [
-            "music",
-            "offline",
-            "ad-free",
-            "shared"
-          ],
-          "eligibility_tags": [
-            "shared-household"
-          ],
-          "notes": [
-            "Monthly equivalent is based on 2-person split."
-          ],
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["music", "offline", "ad-free", "shared"],
+          "eligibility_tags": ["shared-household"],
+          "notes": ["Monthly equivalent is based on 2-person split."],
           "source_url": "https://www.spotify.com/tr-tr/duo/",
           "source_type": "official",
-          "price_fetch": {
-            "enabled": true,
-            "provider": "official_html",
-            "strategy": "regex",
-            "selector": null,
-            "regex": "₺\\s*([0-9]+(?:[.,][0-9]{2})?)|([0-9]+(?:[.,][0-9]{2})?)\\s*(?:TL|₺)",
-            "match_hint": "Premium\\s+Duo|###\\s*Duo|Duo",
-            "last_checked_at": "2026-03-08T21:44:21Z",
-            "last_status": "updated"
-          },
           "is_active": true
         },
         {
@@ -159,38 +88,13 @@
           "billing_period_months": 1,
           "shareable_seats": 6,
           "storage_gb": null,
-          "availability": [
-            "TR"
-          ],
-          "platform_tags": [
-            "ios",
-            "android",
-            "web"
-          ],
-          "feature_tags": [
-            "music",
-            "offline",
-            "ad-free",
-            "shared"
-          ],
-          "eligibility_tags": [
-            "shared-household"
-          ],
-          "notes": [
-            "Monthly equivalent is based on 6-person split."
-          ],
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["music", "offline", "ad-free", "shared"],
+          "eligibility_tags": ["shared-household"],
+          "notes": ["Monthly equivalent is based on 6-person split."],
           "source_url": "https://www.spotify.com/tr-tr/family/",
           "source_type": "official",
-          "price_fetch": {
-            "enabled": true,
-            "provider": "official_html",
-            "strategy": "regex",
-            "selector": null,
-            "regex": "₺\\s*([0-9]+(?:[.,][0-9]{2})?)|([0-9]+(?:[.,][0-9]{2})?)\\s*(?:TL|₺)",
-            "match_hint": "Premium\\s+Aile|Premium\\s+Family|###\\s*Aile|###\\s*Family|Aile|Family",
-            "last_checked_at": "2026-03-08T21:44:21Z",
-            "last_status": "rejected"
-          },
           "is_active": true
         }
       ]
@@ -199,18 +103,9 @@
       "id": "apple-music",
       "category_id": "music-streaming",
       "brand_name": "Apple Music",
-      "aliases": [
-        "Apple Music"
-      ],
-      "keywords": [
-        "apple music",
-        "music"
-      ],
-      "feature_tags": [
-        "music",
-        "offline",
-        "ad-free"
-      ],
+      "aliases": ["Apple Music"],
+      "keywords": ["apple music", "music"],
+      "feature_tags": ["music", "offline", "ad-free"],
       "plans": [
         {
           "id": "apple-music-individual",
@@ -222,33 +117,51 @@
           "billing_period_months": 1,
           "shareable_seats": 1,
           "storage_gb": null,
-          "availability": [
-            "TR"
-          ],
-          "platform_tags": [
-            "ios",
-            "android",
-            "web"
-          ],
-          "feature_tags": [
-            "music",
-            "offline",
-            "ad-free"
-          ],
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["music", "offline", "ad-free"],
           "eligibility_tags": [],
           "notes": [],
           "source_url": "https://www.apple.com/tr/apple-music/",
           "source_type": "official",
-          "price_fetch": {
-            "enabled": true,
-            "provider": "official_html",
-            "strategy": "regex",
-            "selector": null,
-            "regex": "([0-9]+(?:[.,][0-9]{2})?)\\s*(?:TL|₺)",
-            "match_hint": "Bireysel|Individual",
-            "last_checked_at": "2026-03-08T21:44:21Z",
-            "last_status": "ok"
-          },
+          "is_active": true
+        },
+        {
+          "id": "apple-music-student",
+          "service_id": "apple-music",
+          "name": "Student",
+          "kind": "student",
+          "monthly_equivalent_try": 32.99,
+          "billed_amount_try": 32.99,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["music", "offline", "ad-free"],
+          "eligibility_tags": ["student"],
+          "notes": ["Student eligibility required."],
+          "source_url": "https://www.apple.com/tr/apple-music/",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "apple-music-family",
+          "service_id": "apple-music",
+          "name": "Family",
+          "kind": "family",
+          "monthly_equivalent_try": 16.67,
+          "billed_amount_try": 99.99,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": null,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["music", "offline", "ad-free", "shared"],
+          "eligibility_tags": ["shared-household"],
+          "notes": ["Monthly equivalent is based on 6-person split."],
+          "source_url": "https://www.apple.com/tr/apple-music/",
+          "source_type": "official",
           "is_active": true
         }
       ]
@@ -257,17 +170,9 @@
       "id": "netflix",
       "category_id": "video-streaming",
       "brand_name": "Netflix",
-      "aliases": [
-        "Netflix"
-      ],
-      "keywords": [
-        "netflix"
-      ],
-      "feature_tags": [
-        "video",
-        "series",
-        "movies"
-      ],
+      "aliases": ["Netflix"],
+      "keywords": ["netflix"],
+      "feature_tags": ["video", "series", "movies"],
       "plans": [
         {
           "id": "netflix-standard",
@@ -279,34 +184,491 @@
           "billing_period_months": 1,
           "shareable_seats": 1,
           "storage_gb": null,
-          "availability": [
-            "TR"
-          ],
-          "platform_tags": [
-            "ios",
-            "android",
-            "web",
-            "tv"
-          ],
-          "feature_tags": [
-            "video",
-            "series",
-            "movies"
-          ],
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web", "tv"],
+          "feature_tags": ["video", "series", "movies"],
           "eligibility_tags": [],
           "notes": [],
           "source_url": "https://www.netflix.com/tr/",
           "source_type": "official",
-          "price_fetch": {
-            "enabled": true,
-            "provider": "official_html",
-            "strategy": "regex",
-            "selector": null,
-            "regex": "([0-9]+(?:[.,][0-9]{2})?)\\s*(?:TL|₺)",
-            "match_hint": "Standard",
-            "last_checked_at": "2026-03-08T21:44:21Z",
-            "last_status": "parse_failed"
-          },
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "disney-plus",
+      "category_id": "video-streaming",
+      "brand_name": "Disney+",
+      "aliases": ["Disney+", "Disney Plus"],
+      "keywords": ["disney+", "disney plus"],
+      "feature_tags": ["video", "series", "movies"],
+      "plans": [
+        {
+          "id": "disney-plus-monthly",
+          "service_id": "disney-plus",
+          "name": "Standard Monthly",
+          "kind": "individual",
+          "monthly_equivalent_try": 164.9,
+          "billed_amount_try": 164.9,
+          "billing_period_months": 1,
+          "shareable_seats": 4,
+          "storage_gb": null,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web", "tv"],
+          "feature_tags": ["video", "series", "movies"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://www.disneyplus.com/tr-tr",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "disney-plus-annual",
+          "service_id": "disney-plus",
+          "name": "Standard Annual",
+          "kind": "annual",
+          "monthly_equivalent_try": 137.49,
+          "billed_amount_try": 1649.9,
+          "billing_period_months": 12,
+          "shareable_seats": 4,
+          "storage_gb": null,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web", "tv"],
+          "feature_tags": ["video", "series", "movies"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://www.disneyplus.com/tr-tr",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "prime-video",
+      "category_id": "video-streaming",
+      "brand_name": "Prime Video",
+      "aliases": ["Prime Video", "Amazon Prime Video"],
+      "keywords": ["prime video", "amazon prime"],
+      "feature_tags": ["video", "series", "movies"],
+      "plans": [
+        {
+          "id": "prime-video-monthly",
+          "service_id": "prime-video",
+          "name": "Prime Monthly",
+          "kind": "individual",
+          "monthly_equivalent_try": 39.0,
+          "billed_amount_try": 39.0,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web", "tv"],
+          "feature_tags": ["video", "series", "movies"],
+          "eligibility_tags": [],
+          "notes": ["Includes Prime Video access under Amazon Prime in Turkey."],
+          "source_url": "https://www.primevideo.com/",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "icloud-plus",
+      "category_id": "cloud-storage",
+      "brand_name": "iCloud+",
+      "aliases": ["iCloud", "iCloud+"],
+      "keywords": ["icloud", "icloud+"],
+      "feature_tags": ["cloud", "storage", "backup"],
+      "plans": [
+        {
+          "id": "icloud-plus-50gb",
+          "service_id": "icloud-plus",
+          "name": "50 GB",
+          "kind": "storage",
+          "monthly_equivalent_try": 24.99,
+          "billed_amount_try": 24.99,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": 50,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "mac", "web", "windows"],
+          "feature_tags": ["cloud", "storage", "backup"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://www.apple.com/tr/icloud/",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "icloud-plus-200gb",
+          "service_id": "icloud-plus",
+          "name": "200 GB",
+          "kind": "storage",
+          "monthly_equivalent_try": 79.99,
+          "billed_amount_try": 79.99,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": 200,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "mac", "web", "windows"],
+          "feature_tags": ["cloud", "storage", "backup", "shared"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://www.apple.com/tr/icloud/",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "icloud-plus-2tb",
+          "service_id": "icloud-plus",
+          "name": "2 TB",
+          "kind": "storage",
+          "monthly_equivalent_try": 249.99,
+          "billed_amount_try": 249.99,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": 2000,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "mac", "web", "windows"],
+          "feature_tags": ["cloud", "storage", "backup", "shared"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://www.apple.com/tr/icloud/",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "icloud-plus-6tb",
+          "service_id": "icloud-plus",
+          "name": "6 TB",
+          "kind": "storage",
+          "monthly_equivalent_try": 799.99,
+          "billed_amount_try": 799.99,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": 6000,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "mac", "web", "windows"],
+          "feature_tags": ["cloud", "storage", "backup", "shared"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://www.apple.com/tr/icloud/",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "icloud-plus-12tb",
+          "service_id": "icloud-plus",
+          "name": "12 TB",
+          "kind": "storage",
+          "monthly_equivalent_try": 1499.99,
+          "billed_amount_try": 1499.99,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": 12000,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "mac", "web", "windows"],
+          "feature_tags": ["cloud", "storage", "backup", "shared"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://www.apple.com/tr/icloud/",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "google-drive",
+      "category_id": "cloud-storage",
+      "brand_name": "Google Drive",
+      "aliases": ["Google Drive", "Google One"],
+      "keywords": ["google drive", "google one"],
+      "feature_tags": ["cloud", "storage", "backup"],
+      "plans": [
+        {
+          "id": "google-drive-100gb",
+          "service_id": "google-drive",
+          "name": "Google One 100 GB",
+          "kind": "storage",
+          "monthly_equivalent_try": 39.99,
+          "billed_amount_try": 39.99,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": 100,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["cloud", "storage", "backup", "shared"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://one.google.com/about/plans",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "google-drive-200gb",
+          "service_id": "google-drive",
+          "name": "Google One 200 GB",
+          "kind": "storage",
+          "monthly_equivalent_try": 79.99,
+          "billed_amount_try": 79.99,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": 200,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["cloud", "storage", "backup", "shared"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://one.google.com/about/plans",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "google-drive-2tb",
+          "service_id": "google-drive",
+          "name": "Google One 2 TB",
+          "kind": "storage",
+          "monthly_equivalent_try": 199.99,
+          "billed_amount_try": 199.99,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": 2000,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["cloud", "storage", "backup", "shared"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://one.google.com/about/plans",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "google-drive-5tb",
+          "service_id": "google-drive",
+          "name": "Google One 5 TB",
+          "kind": "storage",
+          "monthly_equivalent_try": 499.99,
+          "billed_amount_try": 499.99,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": 5000,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["cloud", "storage", "backup", "shared"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://one.google.com/about/plans",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "google-drive-10tb",
+          "service_id": "google-drive",
+          "name": "Google One 10 TB",
+          "kind": "storage",
+          "monthly_equivalent_try": 999.99,
+          "billed_amount_try": 999.99,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": 10000,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["cloud", "storage", "backup", "shared"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://one.google.com/about/plans",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "google-drive-20tb",
+          "service_id": "google-drive",
+          "name": "Google One 20 TB",
+          "kind": "storage",
+          "monthly_equivalent_try": 1999.99,
+          "billed_amount_try": 1999.99,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": 20000,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["cloud", "storage", "backup", "shared"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://one.google.com/about/plans",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "google-drive-30tb",
+          "service_id": "google-drive",
+          "name": "Google One 30 TB",
+          "kind": "storage",
+          "monthly_equivalent_try": 2999.99,
+          "billed_amount_try": 2999.99,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": 30000,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web"],
+          "feature_tags": ["cloud", "storage", "backup", "shared"],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://one.google.com/about/plans",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "onedrive",
+      "category_id": "cloud-storage",
+      "brand_name": "OneDrive",
+      "aliases": ["OneDrive", "Microsoft OneDrive"],
+      "keywords": ["onedrive", "microsoft 365"],
+      "feature_tags": ["cloud", "storage", "backup"],
+      "plans": [
+        {
+          "id": "onedrive-100gb",
+          "service_id": "onedrive",
+          "name": "Microsoft 365 Basic (100 GB)",
+          "kind": "storage",
+          "monthly_equivalent_try": 58.25,
+          "billed_amount_try": 699.0,
+          "billing_period_months": 12,
+          "shareable_seats": 1,
+          "storage_gb": 100,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web", "windows", "mac"],
+          "feature_tags": ["cloud", "storage", "backup"],
+          "eligibility_tags": [],
+          "notes": ["Annual billing divided into monthly equivalent."],
+          "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/onedrive/compare-onedrive-plans",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "onedrive-1tb-personal",
+          "service_id": "onedrive",
+          "name": "Microsoft 365 Personal (1 TB)",
+          "kind": "storage",
+          "monthly_equivalent_try": 191.58,
+          "billed_amount_try": 2299.0,
+          "billing_period_months": 12,
+          "shareable_seats": 1,
+          "storage_gb": 1000,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web", "windows", "mac"],
+          "feature_tags": ["cloud", "storage", "backup"],
+          "eligibility_tags": [],
+          "notes": ["Annual billing divided into monthly equivalent."],
+          "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "onedrive-6tb-family",
+          "service_id": "onedrive",
+          "name": "Microsoft 365 Family (up to 6 TB)",
+          "kind": "family",
+          "monthly_equivalent_try": 241.58,
+          "billed_amount_try": 2899.0,
+          "billing_period_months": 12,
+          "shareable_seats": 6,
+          "storage_gb": 6000,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web", "windows", "mac"],
+          "feature_tags": ["cloud", "storage", "backup", "shared"],
+          "eligibility_tags": ["shared-household"],
+          "notes": ["Total storage shown as combined capacity."],
+          "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "proton-drive",
+      "category_id": "cloud-storage",
+      "brand_name": "Proton Drive",
+      "aliases": ["Proton Drive", "Proton"],
+      "keywords": ["proton drive", "proton"],
+      "feature_tags": ["cloud", "storage", "privacy"],
+      "plans": [
+        {
+          "id": "proton-drive-plus",
+          "service_id": "proton-drive",
+          "name": "Drive Plus (200 GB)",
+          "kind": "storage",
+          "monthly_equivalent_try": 199.0,
+          "billed_amount_try": 199.0,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": 200,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web", "windows", "mac"],
+          "feature_tags": ["cloud", "storage", "privacy"],
+          "eligibility_tags": [],
+          "notes": ["TRY value is an estimate converted from regional pricing."],
+          "source_url": "https://proton.me/drive/pricing",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "proton-unlimited-500gb",
+          "service_id": "proton-drive",
+          "name": "Proton Unlimited (500 GB)",
+          "kind": "storage",
+          "monthly_equivalent_try": 299.0,
+          "billed_amount_try": 299.0,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": 500,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web", "windows", "mac"],
+          "feature_tags": ["cloud", "storage", "privacy", "bundle"],
+          "eligibility_tags": [],
+          "notes": ["Includes Proton bundle features beyond Drive."],
+          "source_url": "https://proton.me/pricing",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "proton-duo-1tb",
+          "service_id": "proton-drive",
+          "name": "Proton Duo (1 TB)",
+          "kind": "duo",
+          "monthly_equivalent_try": 449.0,
+          "billed_amount_try": 449.0,
+          "billing_period_months": 1,
+          "shareable_seats": 2,
+          "storage_gb": 1000,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web", "windows", "mac"],
+          "feature_tags": ["cloud", "storage", "privacy", "shared"],
+          "eligibility_tags": ["shared-household"],
+          "notes": ["Storage is combined household capacity."],
+          "source_url": "https://proton.me/pricing",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "proton-family-3tb",
+          "service_id": "proton-drive",
+          "name": "Proton Family (3 TB)",
+          "kind": "family",
+          "monthly_equivalent_try": 699.0,
+          "billed_amount_try": 699.0,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": 3000,
+          "availability": ["TR"],
+          "platform_tags": ["ios", "android", "web", "windows", "mac"],
+          "feature_tags": ["cloud", "storage", "privacy", "shared"],
+          "eligibility_tags": ["shared-household"],
+          "notes": ["Storage is combined household capacity."],
+          "source_url": "https://proton.me/pricing",
+          "source_type": "official",
           "is_active": true
         }
       ]
