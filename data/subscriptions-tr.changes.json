@@ -2,11 +2,38 @@
   {
     "service_id": "spotify",
     "plan_id": "spotify-individual",
-    "old_price": "59.99",
+    "old_price": "99.0",
     "new_price": "99",
     "source_url": "https://www.spotify.com/tr-tr/premium/",
+    "status": "ok",
+    "detail": "no change"
+  },
+  {
+    "service_id": "spotify",
+    "plan_id": "spotify-student",
+    "old_price": "49.99",
+    "new_price": "55",
+    "source_url": "https://www.spotify.com/tr-tr/student/",
     "status": "updated",
     "detail": "price changed"
+  },
+  {
+    "service_id": "spotify",
+    "plan_id": "spotify-duo",
+    "old_price": "74.99",
+    "new_price": "135",
+    "source_url": "https://www.spotify.com/tr-tr/duo/",
+    "status": "updated",
+    "detail": "price changed"
+  },
+  {
+    "service_id": "spotify",
+    "plan_id": "spotify-family",
+    "old_price": "41.67",
+    "new_price": "165",
+    "source_url": "https://www.spotify.com/tr-tr/family/",
+    "status": "rejected",
+    "detail": "price jump too large: 3.959683225341972642188624910"
   },
   {
     "service_id": "apple-music",

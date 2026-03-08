@@ -1,7 +1,7 @@
 {
   "country": "TR",
   "currency": "TRY",
-  "last_updated": "2026-03-08T21:23:24Z",
+  "last_updated": "2026-03-08T21:44:21Z",
   "version": 1,
   "services": [
     {
@@ -57,8 +57,8 @@
             "selector": null,
             "regex": "₺\\s*([0-9]+(?:[.,][0-9]{2})?)|([0-9]+(?:[.,][0-9]{2})?)\\s*(?:TL|₺)",
             "match_hint": "Premium\\s+Bireysel|###\\s*Bireysel|Bireysel",
-            "last_checked_at": "2026-03-08T21:23:24Z",
-            "last_status": "updated"
+            "last_checked_at": "2026-03-08T21:44:21Z",
+            "last_status": "ok"
           },
           "is_active": true
         },
@@ -67,8 +67,8 @@
           "service_id": "spotify",
           "name": "Premium Student",
           "kind": "student",
-          "monthly_equivalent_try": 49.99,
-          "billed_amount_try": 49.99,
+          "monthly_equivalent_try": 55.0,
+          "billed_amount_try": 55.0,
           "billing_period_months": 1,
           "shareable_seats": 1,
           "storage_gb": null,
@@ -100,8 +100,8 @@
             "selector": null,
             "regex": "₺\\s*([0-9]+(?:[.,][0-9]{2})?)|([0-9]+(?:[.,][0-9]{2})?)\\s*(?:TL|₺)",
             "match_hint": "Premium\\s+Öğrenci|Premium\\s+Ogrenci|###\\s*Öğrenci|###\\s*Ogrenci|Öğrenci|Ogrenci",
-            "last_checked_at": null,
-            "last_status": "unknown"
+            "last_checked_at": "2026-03-08T21:44:21Z",
+            "last_status": "updated"
           },
           "is_active": true
         },
@@ -110,8 +110,8 @@
           "service_id": "spotify",
           "name": "Premium Duo",
           "kind": "duo",
-          "monthly_equivalent_try": 74.99,
-          "billed_amount_try": 149.99,
+          "monthly_equivalent_try": 135.0,
+          "billed_amount_try": 135.0,
           "billing_period_months": 1,
           "shareable_seats": 2,
           "storage_gb": null,
@@ -144,8 +144,8 @@
             "selector": null,
             "regex": "₺\\s*([0-9]+(?:[.,][0-9]{2})?)|([0-9]+(?:[.,][0-9]{2})?)\\s*(?:TL|₺)",
             "match_hint": "Premium\\s+Duo|###\\s*Duo|Duo",
-            "last_checked_at": null,
-            "last_status": "unknown"
+            "last_checked_at": "2026-03-08T21:44:21Z",
+            "last_status": "updated"
           },
           "is_active": true
         },
@@ -188,8 +188,8 @@
             "selector": null,
             "regex": "₺\\s*([0-9]+(?:[.,][0-9]{2})?)|([0-9]+(?:[.,][0-9]{2})?)\\s*(?:TL|₺)",
             "match_hint": "Premium\\s+Aile|Premium\\s+Family|###\\s*Aile|###\\s*Family|Aile|Family",
-            "last_checked_at": null,
-            "last_status": "unknown"
+            "last_checked_at": "2026-03-08T21:44:21Z",
+            "last_status": "rejected"
           },
           "is_active": true
         }
@@ -246,7 +246,7 @@
             "selector": null,
             "regex": "([0-9]+(?:[.,][0-9]{2})?)\\s*(?:TL|₺)",
             "match_hint": "Bireysel|Individual",
-            "last_checked_at": "2026-03-08T21:23:24Z",
+            "last_checked_at": "2026-03-08T21:44:21Z",
             "last_status": "ok"
           },
           "is_active": true
@@ -304,7 +304,7 @@
             "selector": null,
             "regex": "([0-9]+(?:[.,][0-9]{2})?)\\s*(?:TL|₺)",
             "match_hint": "Standard",
-            "last_checked_at": "2026-03-08T21:23:24Z",
+            "last_checked_at": "2026-03-08T21:44:21Z",
             "last_status": "parse_failed"
           },
           "is_active": true
