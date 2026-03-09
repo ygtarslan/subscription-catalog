@@ -1,41 +1,5 @@
 [
   {
-    "service_id": "spotify",
-    "plan_id": "spotify-individual",
-    "old_price": "99.0",
-    "new_price": "99.0",
-    "source_url": "https://www.spotify.com/tr-tr/premium/",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "spotify",
-    "plan_id": "spotify-student",
-    "old_price": "49.99",
-    "new_price": "49.99",
-    "source_url": "https://www.spotify.com/tr-tr/student/",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "spotify",
-    "plan_id": "spotify-duo",
-    "old_price": "74.99",
-    "new_price": "74.99",
-    "source_url": "https://www.spotify.com/tr-tr/duo/",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "spotify",
-    "plan_id": "spotify-family",
-    "old_price": "41.67",
-    "new_price": "41.67",
-    "source_url": "https://www.spotify.com/tr-tr/family/",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
     "service_id": "apple-music",
     "plan_id": "apple-music-individual",
     "old_price": "59.99",
@@ -56,74 +20,20 @@
   {
     "service_id": "apple-music",
     "plan_id": "apple-music-family",
-    "old_price": "16.67",
+    "old_price": "16.66",
     "new_price": "16.66",
     "source_url": "https://www.apple.com/tr/apple-music/",
-    "status": "updated",
-    "detail": "price changed (billed 99.99 -> 99.99)"
-  },
-  {
-    "service_id": "youtube-premium",
-    "plan_id": "youtube-premium-individual",
-    "old_price": "79.99",
-    "new_price": "79.99",
-    "source_url": "https://www.youtube.com/premium",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "youtube-premium",
-    "plan_id": "youtube-premium-student",
-    "old_price": "52.99",
-    "new_price": "52.99",
-    "source_url": "https://www.youtube.com/premium/student",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "youtube-premium",
-    "plan_id": "youtube-premium-family",
-    "old_price": "26.67",
-    "new_price": "26.67",
-    "source_url": "https://www.youtube.com/premium/family",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "netflix",
-    "plan_id": "netflix-standard",
-    "old_price": "229.99",
-    "new_price": "229.99",
-    "source_url": "https://www.netflix.com/tr/",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "disney-plus",
-    "plan_id": "disney-plus-monthly",
-    "old_price": "249.9",
-    "new_price": "249.9",
-    "source_url": "https://www.disneyplus.com/tr-tr",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
+    "status": "ok",
+    "detail": "no change (billed 99.99 -> 99.99)"
   },
   {
     "service_id": "disney-plus",
     "plan_id": "disney-plus-annual",
-    "old_price": "499.0",
+    "old_price": "10.4",
     "new_price": "10.40",
     "source_url": "https://www.disneyplus.com/tr-tr",
-    "status": "updated",
-    "detail": "price changed (billed 1649.9 -> 499.00)"
-  },
-  {
-    "service_id": "prime-video",
-    "plan_id": "prime-video-monthly",
-    "old_price": "39.0",
-    "new_price": "39.0",
-    "source_url": "https://www.primevideo.com/",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
+    "status": "ok",
+    "detail": "no change (billed 499.0 -> 499.00)"
   },
   {
     "service_id": "blutv",
@@ -144,31 +54,13 @@
     "detail": "404 Client Error: Not Found for url: https://www.hbomax.com/tr"
   },
   {
-    "service_id": "exxen",
-    "plan_id": "exxen-standard",
-    "old_price": "219.9",
-    "new_price": "219.9",
-    "source_url": "https://plan.exxen.com/",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "exxen",
-    "plan_id": "exxen-spor",
-    "old_price": "399.9",
-    "new_price": "399.9",
-    "source_url": "https://plan.exxen.com/",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
     "service_id": "gain",
     "plan_id": "gain-premium-monthly",
     "old_price": "249.0",
     "new_price": "249.0",
     "source_url": "https://www.gain.tv/yasal/abonelik-sozlesmesi",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
+    "status": "error",
+    "detail": "403 Client Error: Forbidden for url: https://www.gain.tv/yasal/abonelik-sozlesmesi"
   },
   {
     "service_id": "tod-tv",
@@ -176,8 +68,8 @@
     "old_price": "399.0",
     "new_price": "399.0",
     "source_url": "https://www.todtv.com.tr/paketler",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
+    "status": "error",
+    "detail": "403 Client Error: Forbidden for url: https://www.todtv.com.tr/paketler"
   },
   {
     "service_id": "bein-connect",
@@ -185,8 +77,8 @@
     "old_price": "99.0",
     "new_price": "99.0",
     "source_url": "https://www.beinconnect.com.tr/",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
+    "status": "error",
+    "detail": "403 Client Error: Forbidden for url: https://www.beinconnect.com.tr/"
   },
   {
     "service_id": "ssport-plus",
@@ -227,92 +119,29 @@
   {
     "service_id": "icloud-plus",
     "plan_id": "icloud-plus-2tb",
-    "old_price": "399.99",
+    "old_price": "66.66",
     "new_price": "66.66",
     "source_url": "https://www.apple.com/tr/icloud/",
-    "status": "updated",
-    "detail": "price changed (billed 399.99 -> 399.99)"
+    "status": "ok",
+    "detail": "no change (billed 399.99 -> 399.99)"
   },
   {
     "service_id": "icloud-plus",
     "plan_id": "icloud-plus-6tb",
-    "old_price": "299.99",
+    "old_price": "50.0",
     "new_price": "50.00",
     "source_url": "https://www.apple.com/tr/icloud/",
-    "status": "updated",
-    "detail": "price changed (billed 299.99 -> 299.99)"
+    "status": "ok",
+    "detail": "no change (billed 299.99 -> 299.99)"
   },
   {
     "service_id": "icloud-plus",
     "plan_id": "icloud-plus-12tb",
-    "old_price": "499.99",
+    "old_price": "83.33",
     "new_price": "83.33",
     "source_url": "https://www.apple.com/tr/icloud/",
-    "status": "updated",
-    "detail": "price changed (billed 499.99 -> 499.99)"
-  },
-  {
-    "service_id": "google-drive",
-    "plan_id": "google-drive-100gb",
-    "old_price": "39.99",
-    "new_price": "39.99",
-    "source_url": "https://one.google.com/about/plans",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "google-drive",
-    "plan_id": "google-drive-200gb",
-    "old_price": "79.99",
-    "new_price": "79.99",
-    "source_url": "https://one.google.com/about/plans",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "google-drive",
-    "plan_id": "google-drive-2tb",
-    "old_price": "199.99",
-    "new_price": "199.99",
-    "source_url": "https://one.google.com/about/plans",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "google-drive",
-    "plan_id": "google-drive-5tb",
-    "old_price": "499.99",
-    "new_price": "499.99",
-    "source_url": "https://one.google.com/about/plans",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "google-drive",
-    "plan_id": "google-drive-10tb",
-    "old_price": "999.99",
-    "new_price": "999.99",
-    "source_url": "https://one.google.com/about/plans",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "google-drive",
-    "plan_id": "google-drive-20tb",
-    "old_price": "1999.99",
-    "new_price": "1999.99",
-    "source_url": "https://one.google.com/about/plans",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "google-drive",
-    "plan_id": "google-drive-30tb",
-    "old_price": "2999.99",
-    "new_price": "2999.99",
-    "source_url": "https://one.google.com/about/plans",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
+    "status": "ok",
+    "detail": "no change (billed 499.99 -> 499.99)"
   },
   {
     "service_id": "onedrive",
@@ -322,158 +151,5 @@
     "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/onedrive/compare-onedrive-plans",
     "status": "error",
     "detail": "HTTPSConnectionPool(host='www.microsoft.com', port=443): Read timed out. (read timeout=30)"
-  },
-  {
-    "service_id": "onedrive",
-    "plan_id": "onedrive-1tb-personal",
-    "old_price": "191.58",
-    "new_price": "191.58",
-    "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "onedrive",
-    "plan_id": "onedrive-6tb-family",
-    "old_price": "241.58",
-    "new_price": "241.58",
-    "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "microsoft-365",
-    "plan_id": "microsoft-365-basic",
-    "old_price": "58.25",
-    "new_price": "58.25",
-    "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "microsoft-365",
-    "plan_id": "microsoft-365-personal",
-    "old_price": "191.58",
-    "new_price": "191.58",
-    "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "microsoft-365",
-    "plan_id": "microsoft-365-family",
-    "old_price": "241.58",
-    "new_price": "241.58",
-    "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "proton-drive",
-    "plan_id": "proton-drive-plus",
-    "old_price": "199.0",
-    "new_price": "199.0",
-    "source_url": "https://proton.me/drive/pricing",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "proton-drive",
-    "plan_id": "proton-unlimited-500gb",
-    "old_price": "299.0",
-    "new_price": "299.0",
-    "source_url": "https://proton.me/pricing",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "proton-drive",
-    "plan_id": "proton-duo-1tb",
-    "old_price": "449.0",
-    "new_price": "449.0",
-    "source_url": "https://proton.me/pricing",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "proton-drive",
-    "plan_id": "proton-family-3tb",
-    "old_price": "699.0",
-    "new_price": "699.0",
-    "source_url": "https://proton.me/pricing",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "dropbox",
-    "plan_id": "dropbox-plus",
-    "old_price": "432.0",
-    "new_price": "432.0",
-    "source_url": "https://www.dropbox.com/plans",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "dropbox",
-    "plan_id": "dropbox-essentials",
-    "old_price": "720.0",
-    "new_price": "720.0",
-    "source_url": "https://www.dropbox.com/plans",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "dropbox",
-    "plan_id": "dropbox-business",
-    "old_price": "648.0",
-    "new_price": "648.0",
-    "source_url": "https://www.dropbox.com/plans",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "google-workspace",
-    "plan_id": "google-workspace-business-starter",
-    "old_price": "209.44",
-    "new_price": "209.44",
-    "source_url": "https://workspace.google.com/intl/tr/pricing.html",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "google-workspace",
-    "plan_id": "google-workspace-business-standard",
-    "old_price": "418.88",
-    "new_price": "418.88",
-    "source_url": "https://workspace.google.com/intl/tr/pricing.html",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "google-workspace",
-    "plan_id": "google-workspace-business-plus",
-    "old_price": "665.28",
-    "new_price": "665.28",
-    "source_url": "https://workspace.google.com/intl/tr/pricing.html",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "notion",
-    "plan_id": "notion-plus",
-    "old_price": "360.0",
-    "new_price": "360.0",
-    "source_url": "https://www.notion.so/pricing",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
-  },
-  {
-    "service_id": "notion",
-    "plan_id": "notion-business",
-    "old_price": "648.0",
-    "new_price": "648.0",
-    "source_url": "https://www.notion.so/pricing",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
   }
 ]
