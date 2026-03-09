@@ -94,31 +94,64 @@ def normalize_price_string(value: str) -> Optional[Decimal]:
         return None
 
 
-def extract_by_regex(html: str, regex_pattern: str, match_hint: Optional[str]) -> Optional[Decimal]:
+def build_hint_patterns(plan: dict, price_fetch: dict) -> list[str]:
+    hints: list[str] = []
+
+    configured_hint = price_fetch.get("match_hint")
+    if isinstance(configured_hint, str) and configured_hint.strip():
+        hints.append(configured_hint.strip())
+    elif isinstance(configured_hint, list):
+        hints.extend([str(h).strip() for h in configured_hint if str(h).strip()])
+
+    kind_aliases = {
+        "student": [r"\bstudent\b", r"\böğrenci\b"],
+        "family": [r"\bfamily\b", r"\baile\b"],
+        "individual": [r"\bindividual\b", r"\bbireysel\b"],
+        "duo": [r"\bduo\b", r"\bikili\b"],
+        "annual": [r"\bannual\b", r"\byıllık\b"],
+    }
+    kind = str(plan.get("kind", "")).strip().lower()
+    hints.extend(kind_aliases.get(kind, []))
+    return hints
+
+
+def extract_by_regex(html: str, regex_pattern: str, match_hints: list[str]) -> Optional[Decimal]:
     text = BeautifulSoup(html, "lxml").get_text(" ", strip=True)
     text = re.sub(r"\s+", " ", text)
 
-    if match_hint:
-        hint_regex = re.compile(match_hint, re.IGNORECASE)
-        windows = []
-        for match in hint_regex.finditer(text):
-            start = max(0, match.start() - 250)
-            end = min(len(text), match.end() + 250)
-            windows.append(text[start:end])
-        search_spaces = windows if windows else [text]
-    else:
-        search_spaces = [text]
+    hint_positions: list[tuple[int, int]] = []
+    for pattern in match_hints:
+        if not pattern:
+            continue
+        try:
+            hint_regex = re.compile(pattern, re.IGNORECASE)
+        except re.error:
+            continue
+        hint_positions.extend((m.start(), m.end()) for m in hint_regex.finditer(text))
+
+    # If hints are provided but not found, fail closed.
+    if match_hints and not hint_positions:
+        return None
 
     price_regex = re.compile(regex_pattern, re.IGNORECASE)
+    price_candidates: list[tuple[int, Decimal]] = []
+    for match in price_regex.finditer(text):
+        raw = match.group(1) if match.groups() else match.group(0)
+        value = normalize_price_string(raw)
+        if value is not None:
+            price_candidates.append((match.start(), value))
 
-    for search_space in search_spaces:
-        matches = price_regex.findall(search_space)
-        for m in matches:
-            raw = m[0] if isinstance(m, tuple) else m
-            value = normalize_price_string(raw)
-            if value is not None:
-                return value
-    return None
+    if not price_candidates:
+        return None
+
+    if not hint_positions:
+        return price_candidates[0][1]
+
+    def distance_to_nearest_hint(price_pos: int) -> int:
+        return min(abs(price_pos - start) for start, _ in hint_positions)
+
+    _, best_value = min(price_candidates, key=lambda c: distance_to_nearest_hint(c[0]))
+    return best_value
 
 
 def extract_by_selector(html: str, selector: str, regex_pattern: Optional[str]) -> Optional[Decimal]:
@@ -145,10 +178,11 @@ def extract_price(plan: dict) -> tuple[Optional[Decimal], str]:
     html = fetch_html(url)
 
     if strategy == "regex":
+        match_hints = build_hint_patterns(plan, price_fetch)
         value = extract_by_regex(
             html,
             price_fetch.get("regex", r"([0-9]+(?:[.,][0-9]{2})?)\s*(?:TL|₺)"),
-            price_fetch.get("match_hint"),
+            match_hints,
         )
         return value, "regex"
 
