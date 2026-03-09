@@ -42,25 +42,25 @@
     "new_price": "59.99",
     "source_url": "https://www.apple.com/tr/apple-music/",
     "status": "ok",
-    "detail": "no change"
+    "detail": "no change (billed 59.99 -> 59.99)"
   },
   {
     "service_id": "apple-music",
     "plan_id": "apple-music-student",
-    "old_price": "59.99",
+    "old_price": "32.99",
     "new_price": "32.99",
     "source_url": "https://www.apple.com/tr/apple-music/",
-    "status": "updated",
-    "detail": "price changed"
+    "status": "ok",
+    "detail": "no change (billed 32.99 -> 32.99)"
   },
   {
     "service_id": "apple-music",
     "plan_id": "apple-music-family",
     "old_price": "16.67",
-    "new_price": "99.99",
+    "new_price": "16.66",
     "source_url": "https://www.apple.com/tr/apple-music/",
-    "status": "rejected",
-    "detail": "price jump too large: 5.998200359928014397120575885"
+    "status": "updated",
+    "detail": "price changed (billed 99.99 -> 99.99)"
   },
   {
     "service_id": "youtube-premium",
@@ -110,11 +110,11 @@
   {
     "service_id": "disney-plus",
     "plan_id": "disney-plus-annual",
-    "old_price": "249.9",
-    "new_price": "499.00",
+    "old_price": "499.0",
+    "new_price": "10.40",
     "source_url": "https://www.disneyplus.com/tr-tr",
     "status": "updated",
-    "detail": "price changed"
+    "detail": "price changed (billed 1649.9 -> 499.00)"
   },
   {
     "service_id": "prime-video",
@@ -167,8 +167,8 @@
     "old_price": "249.0",
     "new_price": "249.0",
     "source_url": "https://www.gain.tv/yasal/abonelik-sozlesmesi",
-    "status": "error",
-    "detail": "403 Client Error: Forbidden for url: https://www.gain.tv/yasal/abonelik-sozlesmesi"
+    "status": "parse_failed",
+    "detail": "strategy=regex"
   },
   {
     "service_id": "tod-tv",
@@ -176,8 +176,8 @@
     "old_price": "399.0",
     "new_price": "399.0",
     "source_url": "https://www.todtv.com.tr/paketler",
-    "status": "error",
-    "detail": "403 Client Error: Forbidden for url: https://www.todtv.com.tr/paketler"
+    "status": "parse_failed",
+    "detail": "strategy=regex"
   },
   {
     "service_id": "bein-connect",
@@ -185,26 +185,26 @@
     "old_price": "99.0",
     "new_price": "99.0",
     "source_url": "https://www.beinconnect.com.tr/",
-    "status": "error",
-    "detail": "403 Client Error: Forbidden for url: https://www.beinconnect.com.tr/"
+    "status": "parse_failed",
+    "detail": "strategy=regex"
   },
   {
     "service_id": "ssport-plus",
     "plan_id": "ssport-plus-monthly",
     "old_price": "349.0",
-    "new_price": "349",
+    "new_price": "349.00",
     "source_url": "https://www.ssportplus.com/",
     "status": "ok",
-    "detail": "no change"
+    "detail": "no change (billed 349.0 -> 349.00)"
   },
   {
     "service_id": "ssport-plus",
     "plan_id": "ssport-plus-annual",
-    "old_price": "349.0",
-    "new_price": "299",
+    "old_price": "299.0",
+    "new_price": "24.92",
     "source_url": "https://www.ssportplus.com/",
-    "status": "updated",
-    "detail": "price changed"
+    "status": "rejected",
+    "detail": "price drop too large: 0.1300565463244889082209656372"
   },
   {
     "service_id": "icloud-plus",
@@ -213,13 +213,13 @@
     "new_price": "39.99",
     "source_url": "https://www.apple.com/tr/icloud/",
     "status": "ok",
-    "detail": "no change"
+    "detail": "no change (billed 39.99 -> 39.99)"
   },
   {
     "service_id": "icloud-plus",
     "plan_id": "icloud-plus-200gb",
     "old_price": "39.99",
-    "new_price": "129.99",
+    "new_price": "21.66",
     "source_url": "https://www.apple.com/tr/icloud/",
     "status": "rejected",
     "detail": "price jump too large: 3.250562640660165041260315079"
@@ -227,29 +227,29 @@
   {
     "service_id": "icloud-plus",
     "plan_id": "icloud-plus-2tb",
-    "old_price": "249.99",
-    "new_price": "399.99",
+    "old_price": "399.99",
+    "new_price": "66.66",
     "source_url": "https://www.apple.com/tr/icloud/",
     "status": "updated",
-    "detail": "price changed"
+    "detail": "price changed (billed 399.99 -> 399.99)"
   },
   {
     "service_id": "icloud-plus",
     "plan_id": "icloud-plus-6tb",
-    "old_price": "799.99",
-    "new_price": "299.99",
+    "old_price": "299.99",
+    "new_price": "50.00",
     "source_url": "https://www.apple.com/tr/icloud/",
     "status": "updated",
-    "detail": "price changed"
+    "detail": "price changed (billed 299.99 -> 299.99)"
   },
   {
     "service_id": "icloud-plus",
     "plan_id": "icloud-plus-12tb",
-    "old_price": "1499.99",
-    "new_price": "499.99",
+    "old_price": "499.99",
+    "new_price": "83.33",
     "source_url": "https://www.apple.com/tr/icloud/",
     "status": "updated",
-    "detail": "price changed"
+    "detail": "price changed (billed 499.99 -> 499.99)"
   },
   {
     "service_id": "google-drive",
