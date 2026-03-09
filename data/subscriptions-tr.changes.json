@@ -39,19 +39,19 @@
     "service_id": "blutv",
     "plan_id": "blutv-monthly",
     "old_price": "199.9",
-    "new_price": "199.9",
-    "source_url": "https://www.blutv.com/uyelik",
-    "status": "error",
-    "detail": "404 Client Error: Not Found for url: https://www.hbomax.com/tr"
+    "new_price": "229.90",
+    "source_url": "https://www.max.com/tr/tr",
+    "status": "updated",
+    "detail": "price changed (billed 199.9 -> 229.90)"
   },
   {
     "service_id": "blutv",
     "plan_id": "blutv-annual",
     "old_price": "149.99",
-    "new_price": "149.99",
-    "source_url": "https://www.blutv.com/uyelik",
-    "status": "error",
-    "detail": "404 Client Error: Not Found for url: https://www.hbomax.com/tr"
+    "new_price": "19.16",
+    "source_url": "https://www.max.com/tr/tr",
+    "status": "rejected",
+    "detail": "price drop too large: 0.1277293182954608589366075893"
   },
   {
     "service_id": "gain",
