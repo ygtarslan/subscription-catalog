@@ -50,7 +50,13 @@
           ],
           "source_url": "https://www.spotify.com/tr-tr/premium/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Premium Individual"
+          }
         },
         {
           "id": "spotify-student",
@@ -83,7 +89,13 @@
           ],
           "source_url": "https://www.spotify.com/tr-tr/student/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Premium Student"
+          }
         },
         {
           "id": "spotify-duo",
@@ -117,7 +129,13 @@
           ],
           "source_url": "https://www.spotify.com/tr-tr/duo/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Premium Duo"
+          }
         },
         {
           "id": "spotify-family",
@@ -151,7 +169,13 @@
           ],
           "source_url": "https://www.spotify.com/tr-tr/family/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Premium Family"
+          }
         }
       ]
     },
@@ -199,7 +223,13 @@
           "notes": [],
           "source_url": "https://www.apple.com/tr/apple-music/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Individual"
+          }
         },
         {
           "id": "apple-music-student",
@@ -232,7 +262,13 @@
           ],
           "source_url": "https://www.apple.com/tr/apple-music/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Student"
+          }
         },
         {
           "id": "apple-music-family",
@@ -266,7 +302,13 @@
           ],
           "source_url": "https://www.apple.com/tr/apple-music/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Family"
+          }
         }
       ]
     },
@@ -318,7 +360,13 @@
           "notes": [],
           "source_url": "https://www.youtube.com/premium",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Individual"
+          }
         },
         {
           "id": "youtube-premium-student",
@@ -353,7 +401,13 @@
           ],
           "source_url": "https://www.youtube.com/premium/student",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Student"
+          }
         },
         {
           "id": "youtube-premium-family",
@@ -389,7 +443,13 @@
           ],
           "source_url": "https://www.youtube.com/premium/family",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Family"
+          }
         }
       ]
     },
@@ -437,7 +497,13 @@
           "notes": [],
           "source_url": "https://www.netflix.com/tr/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Standard"
+          }
         }
       ]
     },
@@ -487,7 +553,13 @@
           "notes": [],
           "source_url": "https://www.disneyplus.com/tr-tr",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Standard Monthly"
+          }
         },
         {
           "id": "disney-plus-annual",
@@ -517,7 +589,13 @@
           "notes": [],
           "source_url": "https://www.disneyplus.com/tr-tr",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Standard Annual"
+          }
         }
       ]
     },
@@ -569,7 +647,13 @@
           ],
           "source_url": "https://www.primevideo.com/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Prime Monthly"
+          }
         }
       ]
     },
@@ -617,7 +701,13 @@
           "notes": [],
           "source_url": "https://www.blutv.com/uyelik",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Aylık"
+          }
         },
         {
           "id": "blutv-annual",
@@ -649,7 +739,13 @@
           ],
           "source_url": "https://www.blutv.com/uyelik",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Yıllık"
+          }
         }
       ]
     },
@@ -696,7 +792,13 @@
           "notes": [],
           "source_url": "https://plan.exxen.com/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Standart"
+          }
         },
         {
           "id": "exxen-spor",
@@ -725,7 +827,13 @@
           "notes": [],
           "source_url": "https://plan.exxen.com/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Spor Paketi"
+          }
         }
       ]
     },
@@ -775,7 +883,13 @@
           "notes": [],
           "source_url": "https://www.gain.tv/yasal/abonelik-sozlesmesi",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Premium Aylık"
+          }
         }
       ]
     },
@@ -825,7 +939,13 @@
           "notes": [],
           "source_url": "https://www.todtv.com.tr/paketler",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Spor Paketi"
+          }
         }
       ]
     },
@@ -875,7 +995,13 @@
           "notes": [],
           "source_url": "https://www.beinconnect.com.tr/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Spor Paketi"
+          }
         }
       ]
     },
@@ -925,7 +1051,13 @@
           "notes": [],
           "source_url": "https://www.ssportplus.com/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Aylık"
+          }
         },
         {
           "id": "ssport-plus-annual",
@@ -957,7 +1089,13 @@
           ],
           "source_url": "https://www.ssportplus.com/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Yıllık"
+          }
         }
       ]
     },
@@ -1007,7 +1145,13 @@
           "notes": [],
           "source_url": "https://www.apple.com/tr/icloud/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "50 GB"
+          }
         },
         {
           "id": "icloud-plus-200gb",
@@ -1038,7 +1182,13 @@
           "notes": [],
           "source_url": "https://www.apple.com/tr/icloud/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "200 GB"
+          }
         },
         {
           "id": "icloud-plus-2tb",
@@ -1069,7 +1219,13 @@
           "notes": [],
           "source_url": "https://www.apple.com/tr/icloud/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "2 TB"
+          }
         },
         {
           "id": "icloud-plus-6tb",
@@ -1100,7 +1256,13 @@
           "notes": [],
           "source_url": "https://www.apple.com/tr/icloud/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "6 TB"
+          }
         },
         {
           "id": "icloud-plus-12tb",
@@ -1131,7 +1293,13 @@
           "notes": [],
           "source_url": "https://www.apple.com/tr/icloud/",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "12 TB"
+          }
         }
       ]
     },
@@ -1182,7 +1350,13 @@
           "notes": [],
           "source_url": "https://one.google.com/about/plans",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Google One 100 GB"
+          }
         },
         {
           "id": "google-drive-200gb",
@@ -1212,7 +1386,13 @@
           "notes": [],
           "source_url": "https://one.google.com/about/plans",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Google One 200 GB"
+          }
         },
         {
           "id": "google-drive-2tb",
@@ -1242,7 +1422,13 @@
           "notes": [],
           "source_url": "https://one.google.com/about/plans",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Google One 2 TB"
+          }
         },
         {
           "id": "google-drive-5tb",
@@ -1272,7 +1458,13 @@
           "notes": [],
           "source_url": "https://one.google.com/about/plans",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Google One 5 TB"
+          }
         },
         {
           "id": "google-drive-10tb",
@@ -1302,7 +1494,13 @@
           "notes": [],
           "source_url": "https://one.google.com/about/plans",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Google One 10 TB"
+          }
         },
         {
           "id": "google-drive-20tb",
@@ -1332,7 +1530,13 @@
           "notes": [],
           "source_url": "https://one.google.com/about/plans",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Google One 20 TB"
+          }
         },
         {
           "id": "google-drive-30tb",
@@ -1362,7 +1566,13 @@
           "notes": [],
           "source_url": "https://one.google.com/about/plans",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Google One 30 TB"
+          }
         }
       ]
     },
@@ -1415,7 +1625,13 @@
           ],
           "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/onedrive/compare-onedrive-plans",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Microsoft 365 Basic (100 GB)"
+          }
         },
         {
           "id": "onedrive-1tb-personal",
@@ -1448,7 +1664,13 @@
           ],
           "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Microsoft 365 Personal (1 TB)"
+          }
         },
         {
           "id": "onedrive-6tb-family",
@@ -1484,7 +1706,13 @@
           ],
           "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Microsoft 365 Family (up to 6 TB)"
+          }
         }
       ]
     },
@@ -1537,7 +1765,13 @@
           ],
           "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Basic"
+          }
         },
         {
           "id": "microsoft-365-personal",
@@ -1570,7 +1804,13 @@
           ],
           "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Personal"
+          }
         },
         {
           "id": "microsoft-365-family",
@@ -1606,7 +1846,13 @@
           ],
           "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Family"
+          }
         }
       ]
     },
@@ -1659,7 +1905,13 @@
           ],
           "source_url": "https://proton.me/drive/pricing",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Drive Plus (200 GB)"
+          }
         },
         {
           "id": "proton-unlimited-500gb",
@@ -1693,7 +1945,13 @@
           ],
           "source_url": "https://proton.me/pricing",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Proton Unlimited (500 GB)"
+          }
         },
         {
           "id": "proton-duo-1tb",
@@ -1729,7 +1987,13 @@
           ],
           "source_url": "https://proton.me/pricing",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Proton Duo (1 TB)"
+          }
         },
         {
           "id": "proton-family-3tb",
@@ -1765,7 +2029,13 @@
           ],
           "source_url": "https://proton.me/pricing",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Proton Family (3 TB)"
+          }
         }
       ]
     },
@@ -1816,7 +2086,13 @@
           ],
           "source_url": "https://www.dropbox.com/plans",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Plus"
+          }
         },
         {
           "id": "dropbox-essentials",
@@ -1849,7 +2125,13 @@
           ],
           "source_url": "https://www.dropbox.com/plans",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Essentials"
+          }
         },
         {
           "id": "dropbox-business",
@@ -1882,7 +2164,13 @@
           ],
           "source_url": "https://www.dropbox.com/plans",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Business"
+          }
         }
       ]
     },
@@ -1935,7 +2223,13 @@
           ],
           "source_url": "https://workspace.google.com/intl/tr/pricing.html",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Business Starter"
+          }
         },
         {
           "id": "google-workspace-business-standard",
@@ -1968,7 +2262,13 @@
           ],
           "source_url": "https://workspace.google.com/intl/tr/pricing.html",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Business Standard"
+          }
         },
         {
           "id": "google-workspace-business-plus",
@@ -2001,7 +2301,13 @@
           ],
           "source_url": "https://workspace.google.com/intl/tr/pricing.html",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Business Plus"
+          }
         }
       ]
     },
@@ -2052,7 +2358,13 @@
           ],
           "source_url": "https://www.notion.so/pricing",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Plus"
+          }
         },
         {
           "id": "notion-business",
@@ -2085,7 +2397,13 @@
           ],
           "source_url": "https://www.notion.so/pricing",
           "source_type": "official",
-          "is_active": true
+          "is_active": true,
+          "price_fetch": {
+            "enabled": true,
+            "strategy": "regex",
+            "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
+            "match_hint": "Business"
+          }
         }
       ]
     }
