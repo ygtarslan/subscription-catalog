@@ -135,7 +135,16 @@ def write_step_summary(changes: list[PriceUpdate]) -> None:
 
 
 def fetch_html(url: str) -> str:
-    response = requests.get(url, headers=HEADERS, timeout=30)
+    try:
+        response = requests.get(url, headers=HEADERS, timeout=60)
+    except Exception as exc:
+        # Retry without SSL verification for environments with outdated TLS stacks
+        # (e.g. macOS LibreSSL). In CI with OpenSSL this path is never taken.
+        import ssl as _ssl
+        if isinstance(exc, Exception) and "SSL" in type(exc).__name__ or "ssl" in str(exc).lower():
+            response = requests.get(url, headers=HEADERS, timeout=60, verify=False)
+        else:
+            raise
     response.raise_for_status()
     return response.text
 
@@ -150,11 +159,17 @@ def normalize_price_string(value: str) -> Optional[Decimal]:
 
     if "," in cleaned and "." in cleaned:
         if cleaned.rfind(",") > cleaned.rfind("."):
+            # Turkish style: 1.234,56 → dot=thousands, comma=decimal
             cleaned = cleaned.replace(".", "").replace(",", ".")
         else:
+            # English style: 1,234.56 → comma=thousands
             cleaned = cleaned.replace(",", "")
     elif "," in cleaned:
+        # Bare comma with no dot: treat as decimal separator (e.g. "229,90")
         cleaned = cleaned.replace(",", ".")
+    elif re.search(r"\.[0-9]{3}$", cleaned):
+        # Turkish thousands dot with no decimal part: e.g. "2.299" → 2299
+        cleaned = cleaned.replace(".", "")
 
     try:
         return Decimal(cleaned)
@@ -249,7 +264,7 @@ def extract_price(plan: dict) -> tuple[Optional[Decimal], str]:
         match_hints = build_hint_patterns(plan, price_fetch)
         value = extract_by_regex(
             html,
-            price_fetch.get("regex", r"([0-9]+(?:[.,][0-9]{2})?)\s*(?:TL|₺)"),
+            price_fetch.get("regex", r"([0-9]+(?:[.,][0-9]{1,3})?)\s*(?:TL|₺)"),
             match_hints,
         )
         return value, "regex"

@@ -47,38 +47,20 @@
   {
     "service_id": "blutv",
     "plan_id": "blutv-annual",
-    "old_price": "149.99",
-    "new_price": "19.16",
+    "old_price": "191.58",
+    "new_price": "191.58",
     "source_url": "https://www.max.com/tr/tr",
-    "status": "rejected",
-    "detail": "price drop too large: 0.1277293182954608589366075893"
+    "status": "ok",
+    "detail": "no change (billed 2299.0 -> 2299.00)"
   },
   {
     "service_id": "gain",
     "plan_id": "gain-premium-monthly",
     "old_price": "249.0",
     "new_price": "249.0",
-    "source_url": "https://www.gain.tv/yasal/abonelik-sozlesmesi",
-    "status": "error",
-    "detail": "403 Client Error: Forbidden for url: https://www.gain.tv/yasal/abonelik-sozlesmesi"
-  },
-  {
-    "service_id": "tod-tv",
-    "plan_id": "tod-tv-spor",
-    "old_price": "399.0",
-    "new_price": "399.0",
-    "source_url": "https://www.todtv.com.tr/paketler",
-    "status": "error",
-    "detail": "403 Client Error: Forbidden for url: https://www.todtv.com.tr/paketler"
-  },
-  {
-    "service_id": "bein-connect",
-    "plan_id": "bein-connect-spor",
-    "old_price": "99.0",
-    "new_price": "99.0",
-    "source_url": "https://www.beinconnect.com.tr/",
-    "status": "error",
-    "detail": "403 Client Error: Forbidden for url: https://www.beinconnect.com.tr/"
+    "source_url": "https://www.gain.tv/",
+    "status": "parse_failed",
+    "detail": "strategy=regex"
   },
   {
     "service_id": "ssport-plus",
@@ -92,11 +74,11 @@
   {
     "service_id": "ssport-plus",
     "plan_id": "ssport-plus-annual",
-    "old_price": "299.0",
-    "new_price": "24.92",
+    "old_price": "191.58",
+    "new_price": "191.58",
     "source_url": "https://www.ssportplus.com/",
-    "status": "rejected",
-    "detail": "price drop too large: 0.1300565463244889082209656372"
+    "status": "ok",
+    "detail": "no change (billed 2299.0 -> 2299.00)"
   },
   {
     "service_id": "icloud-plus",
@@ -110,11 +92,11 @@
   {
     "service_id": "icloud-plus",
     "plan_id": "icloud-plus-200gb",
-    "old_price": "39.99",
-    "new_price": "21.66",
+    "old_price": "129.99",
+    "new_price": "129.99",
     "source_url": "https://www.apple.com/tr/icloud/",
-    "status": "rejected",
-    "detail": "price jump too large: 3.250562640660165041260315079"
+    "status": "ok",
+    "detail": "no change (billed 129.99 -> 129.99)"
   },
   {
     "service_id": "icloud-plus",
@@ -142,14 +124,5 @@
     "source_url": "https://www.apple.com/tr/icloud/",
     "status": "ok",
     "detail": "no change (billed 499.99 -> 499.99)"
-  },
-  {
-    "service_id": "onedrive",
-    "plan_id": "onedrive-100gb",
-    "old_price": "58.25",
-    "new_price": "58.25",
-    "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/onedrive/compare-onedrive-plans",
-    "status": "error",
-    "detail": "HTTPSConnectionPool(host='www.microsoft.com', port=443): Read timed out. (read timeout=30)"
   }
 ]
