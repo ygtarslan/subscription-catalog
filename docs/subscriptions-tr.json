@@ -688,11 +688,16 @@
     {
       "id": "blutv",
       "category_id": "video-streaming",
-      "brand_name": "BluTV",
+      "brand_name": "HBO Max",
       "aliases": [
+        "HBO Max",
+        "Max",
         "BluTV"
       ],
       "keywords": [
+        "hbomax",
+        "hbo max",
+        "max",
         "blutv"
       ],
       "feature_tags": [
@@ -726,8 +731,10 @@
             "movies"
           ],
           "eligibility_tags": [],
-          "notes": [],
-          "source_url": "https://www.blutv.com/uyelik",
+          "notes": [
+            "Service renamed from BluTV to HBO Max (Max) in Turkey."
+          ],
+          "source_url": "https://www.max.com/tr/tr",
           "source_type": "official",
           "is_active": true,
           "price_fetch": {
@@ -765,9 +772,10 @@
           ],
           "eligibility_tags": [],
           "notes": [
-            "Annual billing divided into monthly equivalent."
+            "Annual billing divided into monthly equivalent.",
+            "Service renamed from BluTV to HBO Max (Max) in Turkey."
           ],
-          "source_url": "https://www.blutv.com/uyelik",
+          "source_url": "https://www.max.com/tr/tr",
           "source_type": "official",
           "is_active": true,
           "price_fetch": {
