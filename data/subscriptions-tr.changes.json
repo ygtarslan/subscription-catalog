@@ -59,8 +59,8 @@
     "old_price": "249.0",
     "new_price": "249.0",
     "source_url": "https://www.gain.tv/",
-    "status": "parse_failed",
-    "detail": "strategy=regex"
+    "status": "error",
+    "detail": "403 Client Error: Forbidden for url: https://www.gain.tv/"
   },
   {
     "service_id": "ssport-plus",
