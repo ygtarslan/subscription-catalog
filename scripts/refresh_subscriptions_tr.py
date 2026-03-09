@@ -1,7 +1,9 @@
 
 import json
+import os
 import re
 import shutil
+from collections import Counter
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from decimal import Decimal, InvalidOperation
@@ -63,6 +65,72 @@ def backup_catalog() -> None:
 def save_changelog(changes: list[dict]) -> None:
     with CHANGELOG_FILE.open("w", encoding="utf-8") as f:
         json.dump(changes, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+
+def _gha_escape(value: str) -> str:
+    return (
+        value.replace("%", "%25")
+        .replace("\r", "%0D")
+        .replace("\n", "%0A")
+        .replace(":", "%3A")
+        .replace(",", "%2C")
+    )
+
+
+def print_github_annotations(changes: list[PriceUpdate]) -> None:
+    for c in changes:
+        level = "notice"
+        if c.status in {"parse_failed", "rejected"}:
+            level = "warning"
+        elif c.status == "error":
+            level = "error"
+
+        title = _gha_escape(f"{c.service_id}/{c.plan_id} - {c.status}")
+        message = _gha_escape(f"{c.old_price} -> {c.new_price} | {c.detail}")
+        print(f"::{level} title={title}::{message}")
+
+
+def write_step_summary(changes: list[PriceUpdate]) -> None:
+    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not summary_path:
+        return
+
+    status_counts = Counter(c.status for c in changes)
+    now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+    lines = [
+        "## Turkey Catalog Refresh Report",
+        "",
+        f"- Generated at: `{now}`",
+        f"- Total checked plans: `{len(changes)}`",
+        "",
+        "### Status counts",
+        "",
+        "| Status | Count |",
+        "|---|---:|",
+    ]
+    for status in sorted(status_counts.keys()):
+        lines.append(f"| `{status}` | {status_counts[status]} |")
+
+    lines.extend(
+        [
+            "",
+            "### Per-plan results",
+            "",
+            "| Service | Plan | Status | Old | New | Detail |",
+            "|---|---|---|---:|---:|---|",
+        ]
+    )
+
+    for c in changes:
+        detail = c.detail.replace("\n", " ").replace("|", "\\|")
+        lines.append(
+            f"| `{c.service_id}` | `{c.plan_id}` | `{c.status}` | `{c.old_price}` | `{c.new_price}` | {detail} |"
+        )
+
+    with open(summary_path, "a", encoding="utf-8") as f:
+        f.write("\n".join(lines))
         f.write("\n")
 
 
@@ -358,6 +426,8 @@ def main() -> None:
     print("Refresh complete")
     for c in changes:
         print(f"[{c.status}] {c.service_id}/{c.plan_id}: {c.old_price} -> {c.new_price} ({c.detail})")
+    print_github_annotations(changes)
+    write_step_summary(changes)
 
 
 if __name__ == "__main__":
