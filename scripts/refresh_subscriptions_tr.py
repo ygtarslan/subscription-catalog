@@ -213,6 +213,25 @@ def validate_price_change(old_price: Decimal, new_price: Decimal) -> tuple[bool,
     return True, "ok"
 
 
+def quantize_money(value: Decimal) -> Decimal:
+    return value.quantize(Decimal("0.01"))
+
+
+def denominator_for_monthly(plan: dict) -> Decimal:
+    billing_months = int(plan.get("billing_period_months", 1) or 1)
+    shareable_seats = int(plan.get("shareable_seats", 1) or 1)
+    denom = Decimal(max(1, billing_months * shareable_seats))
+    return denom
+
+
+def old_billed_price(plan: dict) -> Decimal:
+    billed = plan.get("billed_amount_try")
+    if billed is not None:
+        return Decimal(str(billed))
+    monthly = Decimal(str(plan.get("monthly_equivalent_try", 0)))
+    return quantize_money(monthly * denominator_for_monthly(plan))
+
+
 def refresh_catalog() -> tuple[dict, list[PriceUpdate]]:
     catalog = load_catalog()
     changes: list[PriceUpdate] = []
@@ -224,7 +243,8 @@ def refresh_catalog() -> tuple[dict, list[PriceUpdate]]:
             if not price_fetch.get("enabled", False):
                 continue
 
-            old_price = Decimal(str(plan.get("monthly_equivalent_try", 0)))
+            old_monthly_price = Decimal(str(plan.get("monthly_equivalent_try", 0)))
+            old_billed = old_billed_price(plan)
 
             try:
                 new_price, mode = extract_price(plan)
@@ -235,8 +255,8 @@ def refresh_catalog() -> tuple[dict, list[PriceUpdate]]:
                     PriceUpdate(
                         service_id=service["id"],
                         plan_id=plan["id"],
-                        old_price=old_price,
-                        new_price=old_price,
+                        old_price=old_monthly_price,
+                        new_price=old_monthly_price,
                         source_url=plan.get("source_url", ""),
                         status="error",
                         detail=str(exc),
@@ -251,8 +271,8 @@ def refresh_catalog() -> tuple[dict, list[PriceUpdate]]:
                     PriceUpdate(
                         service_id=service["id"],
                         plan_id=plan["id"],
-                        old_price=old_price,
-                        new_price=old_price,
+                        old_price=old_monthly_price,
+                        new_price=old_monthly_price,
                         source_url=plan.get("source_url", ""),
                         status="parse_failed",
                         detail=f"strategy={mode}",
@@ -260,7 +280,10 @@ def refresh_catalog() -> tuple[dict, list[PriceUpdate]]:
                 )
                 continue
 
-            is_valid, detail = validate_price_change(old_price, new_price)
+            # Fetched value is treated as billed amount in source currency/period.
+            new_billed = quantize_money(new_price)
+            new_monthly = quantize_money(new_billed / denominator_for_monthly(plan))
+            is_valid, detail = validate_price_change(old_billed, new_billed)
             price_fetch["last_checked_at"] = now
 
             if not is_valid:
@@ -269,8 +292,8 @@ def refresh_catalog() -> tuple[dict, list[PriceUpdate]]:
                     PriceUpdate(
                         service_id=service["id"],
                         plan_id=plan["id"],
-                        old_price=old_price,
-                        new_price=new_price,
+                        old_price=old_monthly_price,
+                        new_price=new_monthly,
                         source_url=plan.get("source_url", ""),
                         status="rejected",
                         detail=detail,
@@ -278,20 +301,19 @@ def refresh_catalog() -> tuple[dict, list[PriceUpdate]]:
                 )
                 continue
 
-            if new_price != old_price:
-                plan["monthly_equivalent_try"] = float(new_price)
-                if plan.get("billing_period_months", 1) == 1:
-                    plan["billed_amount_try"] = float(new_price)
+            if new_monthly != old_monthly_price:
+                plan["monthly_equivalent_try"] = float(new_monthly)
+                plan["billed_amount_try"] = float(new_billed)
                 price_fetch["last_status"] = "updated"
                 changes.append(
                     PriceUpdate(
                         service_id=service["id"],
                         plan_id=plan["id"],
-                        old_price=old_price,
-                        new_price=new_price,
+                        old_price=old_monthly_price,
+                        new_price=new_monthly,
                         source_url=plan.get("source_url", ""),
                         status="updated",
-                        detail="price changed",
+                        detail=f"price changed (billed {old_billed} -> {new_billed})",
                     )
                 )
             else:
@@ -301,11 +323,11 @@ def refresh_catalog() -> tuple[dict, list[PriceUpdate]]:
                     PriceUpdate(
                         service_id=service["id"],
                         plan_id=plan["id"],
-                        old_price=old_price,
-                        new_price=new_price,
+                        old_price=old_monthly_price,
+                        new_price=new_monthly,
                         source_url=plan.get("source_url", ""),
                         status="ok",
-                        detail="no change",
+                        detail=f"no change (billed {old_billed} -> {new_billed})",
                     )
                 )
 
