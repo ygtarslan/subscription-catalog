@@ -47,8 +47,8 @@
   {
     "service_id": "apple-music",
     "plan_id": "apple-music-student",
-    "old_price": "32.99",
-    "new_price": "59.99",
+    "old_price": "59.99",
+    "new_price": "32.99",
     "source_url": "https://www.apple.com/tr/apple-music/",
     "status": "updated",
     "detail": "price changed"
@@ -101,17 +101,17 @@
   {
     "service_id": "disney-plus",
     "plan_id": "disney-plus-monthly",
-    "old_price": "164.9",
-    "new_price": "249.90",
+    "old_price": "249.9",
+    "new_price": "249.9",
     "source_url": "https://www.disneyplus.com/tr-tr",
-    "status": "updated",
-    "detail": "price changed"
+    "status": "parse_failed",
+    "detail": "strategy=regex"
   },
   {
     "service_id": "disney-plus",
     "plan_id": "disney-plus-annual",
-    "old_price": "137.49",
-    "new_price": "249.90",
+    "old_price": "249.9",
+    "new_price": "499.00",
     "source_url": "https://www.disneyplus.com/tr-tr",
     "status": "updated",
     "detail": "price changed"
@@ -147,19 +147,19 @@
     "service_id": "exxen",
     "plan_id": "exxen-standard",
     "old_price": "219.9",
-    "new_price": "1",
+    "new_price": "219.9",
     "source_url": "https://plan.exxen.com/",
-    "status": "rejected",
-    "detail": "price drop too large: 0.004547521600727603456116416553"
+    "status": "parse_failed",
+    "detail": "strategy=regex"
   },
   {
     "service_id": "exxen",
     "plan_id": "exxen-spor",
     "old_price": "399.9",
-    "new_price": "1",
+    "new_price": "399.9",
     "source_url": "https://plan.exxen.com/",
-    "status": "rejected",
-    "detail": "price drop too large: 0.002500625156289072268067016754"
+    "status": "parse_failed",
+    "detail": "strategy=regex"
   },
   {
     "service_id": "gain",
@@ -191,17 +191,17 @@
   {
     "service_id": "ssport-plus",
     "plan_id": "ssport-plus-monthly",
-    "old_price": "299.0",
+    "old_price": "349.0",
     "new_price": "349",
     "source_url": "https://www.ssportplus.com/",
-    "status": "updated",
-    "detail": "price changed"
+    "status": "ok",
+    "detail": "no change"
   },
   {
     "service_id": "ssport-plus",
     "plan_id": "ssport-plus-annual",
-    "old_price": "191.58",
-    "new_price": "349",
+    "old_price": "349.0",
+    "new_price": "299",
     "source_url": "https://www.ssportplus.com/",
     "status": "updated",
     "detail": "price changed"
@@ -209,47 +209,47 @@
   {
     "service_id": "icloud-plus",
     "plan_id": "icloud-plus-50gb",
-    "old_price": "24.99",
+    "old_price": "39.99",
     "new_price": "39.99",
     "source_url": "https://www.apple.com/tr/icloud/",
-    "status": "updated",
-    "detail": "price changed"
+    "status": "ok",
+    "detail": "no change"
   },
   {
     "service_id": "icloud-plus",
     "plan_id": "icloud-plus-200gb",
-    "old_price": "79.99",
-    "new_price": "39.99",
+    "old_price": "39.99",
+    "new_price": "129.99",
     "source_url": "https://www.apple.com/tr/icloud/",
-    "status": "updated",
-    "detail": "price changed"
+    "status": "rejected",
+    "detail": "price jump too large: 3.250562640660165041260315079"
   },
   {
     "service_id": "icloud-plus",
     "plan_id": "icloud-plus-2tb",
     "old_price": "249.99",
-    "new_price": "39.99",
+    "new_price": "399.99",
     "source_url": "https://www.apple.com/tr/icloud/",
-    "status": "rejected",
-    "detail": "price drop too large: 0.1599663986559462378495139806"
+    "status": "updated",
+    "detail": "price changed"
   },
   {
     "service_id": "icloud-plus",
     "plan_id": "icloud-plus-6tb",
     "old_price": "799.99",
-    "new_price": "39.99",
+    "new_price": "299.99",
     "source_url": "https://www.apple.com/tr/icloud/",
-    "status": "rejected",
-    "detail": "price drop too large: 0.04998812485156064450805635070"
+    "status": "updated",
+    "detail": "price changed"
   },
   {
     "service_id": "icloud-plus",
     "plan_id": "icloud-plus-12tb",
     "old_price": "1499.99",
-    "new_price": "39.99",
+    "new_price": "499.99",
     "source_url": "https://www.apple.com/tr/icloud/",
-    "status": "rejected",
-    "detail": "price drop too large: 0.02666017773451823012153414356"
+    "status": "updated",
+    "detail": "price changed"
   },
   {
     "service_id": "google-drive",
