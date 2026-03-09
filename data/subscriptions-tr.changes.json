@@ -38,11 +38,11 @@
   {
     "service_id": "blutv",
     "plan_id": "blutv-monthly",
-    "old_price": "199.9",
+    "old_price": "229.9",
     "new_price": "229.90",
     "source_url": "https://www.max.com/tr/tr",
-    "status": "updated",
-    "detail": "price changed (billed 199.9 -> 229.90)"
+    "status": "ok",
+    "detail": "no change (billed 229.9 -> 229.90)"
   },
   {
     "service_id": "blutv",

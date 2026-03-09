@@ -1,7 +1,7 @@
 {
   "country": "TR",
   "currency": "TRY",
-  "last_updated": "2026-03-09T02:25:09Z",
+  "last_updated": "2026-03-09T02:36:14Z",
   "version": 3,
   "services": [
     {
@@ -237,7 +237,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Individual",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "ok"
           }
         },
@@ -278,7 +278,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Student",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "ok"
           }
         },
@@ -320,7 +320,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Family",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "ok"
           }
         }
@@ -619,7 +619,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Standard Annual",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "ok"
           }
         }
@@ -711,8 +711,8 @@
           "service_id": "blutv",
           "name": "Aylık",
           "kind": "individual",
-          "monthly_equivalent_try": 199.9,
-          "billed_amount_try": 199.9,
+          "monthly_equivalent_try": 229.9,
+          "billed_amount_try": 229.9,
           "billing_period_months": 1,
           "shareable_seats": 1,
           "storage_gb": null,
@@ -742,8 +742,8 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Aylık",
-            "last_checked_at": "2026-03-09T02:25:09Z",
-            "last_status": "error:HTTPError"
+            "last_checked_at": "2026-03-09T02:36:14Z",
+            "last_status": "updated"
           }
         },
         {
@@ -783,8 +783,8 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Yıllık",
-            "last_checked_at": "2026-03-09T02:25:09Z",
-            "last_status": "error:HTTPError"
+            "last_checked_at": "2026-03-09T02:36:14Z",
+            "last_status": "rejected"
           }
         }
       ]
@@ -933,7 +933,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Premium Aylık",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "error:HTTPError"
           }
         }
@@ -991,7 +991,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Spor Paketi",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "error:HTTPError"
           }
         }
@@ -1049,7 +1049,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Spor Paketi",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "error:HTTPError"
           }
         }
@@ -1107,7 +1107,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Aylık",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "ok"
           }
         },
@@ -1147,7 +1147,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Yıllık",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "rejected"
           }
         }
@@ -1205,7 +1205,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "50 GB",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "ok"
           }
         },
@@ -1244,7 +1244,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "200 GB",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "rejected"
           }
         },
@@ -1283,7 +1283,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "2 TB",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "ok"
           }
         },
@@ -1322,7 +1322,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "6 TB",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "ok"
           }
         },
@@ -1361,7 +1361,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "12 TB",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "ok"
           }
         }
@@ -1709,7 +1709,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,2})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Microsoft 365 Basic (100 GB)",
-            "last_checked_at": "2026-03-09T02:25:09Z",
+            "last_checked_at": "2026-03-09T02:36:14Z",
             "last_status": "error:ReadTimeout"
           }
         },
