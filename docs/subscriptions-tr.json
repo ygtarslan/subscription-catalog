@@ -1,8 +1,8 @@
 {
   "country": "TR",
   "currency": "TRY",
-  "last_updated": "2026-03-08T22:05:16Z",
-  "version": 2,
+  "last_updated": "2026-03-09T01:24:26Z",
+  "version": 3,
   "services": [
     {
       "id": "spotify",
@@ -271,6 +271,129 @@
       ]
     },
     {
+      "id": "youtube-premium",
+      "category_id": "video-streaming",
+      "brand_name": "YouTube Premium",
+      "aliases": [
+        "YouTube Premium",
+        "YouTube Music Premium"
+      ],
+      "keywords": [
+        "youtube premium",
+        "youtube music premium"
+      ],
+      "feature_tags": [
+        "video",
+        "music",
+        "ad-free",
+        "offline"
+      ],
+      "plans": [
+        {
+          "id": "youtube-premium-individual",
+          "service_id": "youtube-premium",
+          "name": "Individual",
+          "kind": "individual",
+          "monthly_equivalent_try": 79.99,
+          "billed_amount_try": 79.99,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "tv"
+          ],
+          "feature_tags": [
+            "video",
+            "music",
+            "ad-free",
+            "offline"
+          ],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://www.youtube.com/premium",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "youtube-premium-student",
+          "service_id": "youtube-premium",
+          "name": "Student",
+          "kind": "student",
+          "monthly_equivalent_try": 52.99,
+          "billed_amount_try": 52.99,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "tv"
+          ],
+          "feature_tags": [
+            "video",
+            "music",
+            "ad-free",
+            "offline"
+          ],
+          "eligibility_tags": [
+            "student"
+          ],
+          "notes": [
+            "Student verification required."
+          ],
+          "source_url": "https://www.youtube.com/premium/student",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "youtube-premium-family",
+          "service_id": "youtube-premium",
+          "name": "Family",
+          "kind": "family",
+          "monthly_equivalent_try": 26.67,
+          "billed_amount_try": 159.99,
+          "billing_period_months": 1,
+          "shareable_seats": 6,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "tv"
+          ],
+          "feature_tags": [
+            "video",
+            "music",
+            "ad-free",
+            "offline",
+            "shared"
+          ],
+          "eligibility_tags": [
+            "shared-household"
+          ],
+          "notes": [
+            "Monthly equivalent is based on 6-person split."
+          ],
+          "source_url": "https://www.youtube.com/premium/family",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
       "id": "netflix",
       "category_id": "video-streaming",
       "brand_name": "Netflix",
@@ -445,6 +568,394 @@
             "Includes Prime Video access under Amazon Prime in Turkey."
           ],
           "source_url": "https://www.primevideo.com/",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "blutv",
+      "category_id": "video-streaming",
+      "brand_name": "BluTV",
+      "aliases": [
+        "BluTV"
+      ],
+      "keywords": [
+        "blutv"
+      ],
+      "feature_tags": [
+        "video",
+        "series",
+        "movies"
+      ],
+      "plans": [
+        {
+          "id": "blutv-monthly",
+          "service_id": "blutv",
+          "name": "Aylık",
+          "kind": "individual",
+          "monthly_equivalent_try": 199.9,
+          "billed_amount_try": 199.9,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "tv"
+          ],
+          "feature_tags": [
+            "video",
+            "series",
+            "movies"
+          ],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://www.blutv.com/uyelik",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "blutv-annual",
+          "service_id": "blutv",
+          "name": "Yıllık",
+          "kind": "annual",
+          "monthly_equivalent_try": 149.99,
+          "billed_amount_try": 1799.9,
+          "billing_period_months": 12,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "tv"
+          ],
+          "feature_tags": [
+            "video",
+            "series",
+            "movies"
+          ],
+          "eligibility_tags": [],
+          "notes": [
+            "Annual billing divided into monthly equivalent."
+          ],
+          "source_url": "https://www.blutv.com/uyelik",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "exxen",
+      "category_id": "video-streaming",
+      "brand_name": "Exxen",
+      "aliases": [
+        "Exxen"
+      ],
+      "keywords": [
+        "exxen"
+      ],
+      "feature_tags": [
+        "video",
+        "series",
+        "sports"
+      ],
+      "plans": [
+        {
+          "id": "exxen-standard",
+          "service_id": "exxen",
+          "name": "Standart",
+          "kind": "individual",
+          "monthly_equivalent_try": 219.9,
+          "billed_amount_try": 219.9,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "tv"
+          ],
+          "feature_tags": [
+            "video",
+            "series"
+          ],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://plan.exxen.com/",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "exxen-spor",
+          "service_id": "exxen",
+          "name": "Spor Paketi",
+          "kind": "sports",
+          "monthly_equivalent_try": 399.9,
+          "billed_amount_try": 399.9,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "tv"
+          ],
+          "feature_tags": [
+            "video",
+            "sports"
+          ],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://plan.exxen.com/",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "gain",
+      "category_id": "video-streaming",
+      "brand_name": "GAİN",
+      "aliases": [
+        "GAİN",
+        "Gain"
+      ],
+      "keywords": [
+        "gain",
+        "gaın"
+      ],
+      "feature_tags": [
+        "video",
+        "series",
+        "movies"
+      ],
+      "plans": [
+        {
+          "id": "gain-premium-monthly",
+          "service_id": "gain",
+          "name": "Premium Aylık",
+          "kind": "individual",
+          "monthly_equivalent_try": 249.0,
+          "billed_amount_try": 249.0,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "tv"
+          ],
+          "feature_tags": [
+            "video",
+            "series",
+            "movies"
+          ],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://www.gain.tv/yasal/abonelik-sozlesmesi",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "tod-tv",
+      "category_id": "sports-streaming",
+      "brand_name": "TOD TV",
+      "aliases": [
+        "TOD TV",
+        "TOD"
+      ],
+      "keywords": [
+        "tod tv",
+        "tod"
+      ],
+      "feature_tags": [
+        "video",
+        "sports",
+        "live"
+      ],
+      "plans": [
+        {
+          "id": "tod-tv-spor",
+          "service_id": "tod-tv",
+          "name": "Spor Paketi",
+          "kind": "sports",
+          "monthly_equivalent_try": 399.0,
+          "billed_amount_try": 399.0,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "tv"
+          ],
+          "feature_tags": [
+            "video",
+            "sports",
+            "live"
+          ],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://www.todtv.com.tr/paketler",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "bein-connect",
+      "category_id": "sports-streaming",
+      "brand_name": "beIN CONNECT",
+      "aliases": [
+        "beIN CONNECT",
+        "beIN"
+      ],
+      "keywords": [
+        "bein connect",
+        "bein"
+      ],
+      "feature_tags": [
+        "video",
+        "sports",
+        "live"
+      ],
+      "plans": [
+        {
+          "id": "bein-connect-spor",
+          "service_id": "bein-connect",
+          "name": "Spor Paketi",
+          "kind": "sports",
+          "monthly_equivalent_try": 99.0,
+          "billed_amount_try": 99.0,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "tv"
+          ],
+          "feature_tags": [
+            "video",
+            "sports",
+            "live"
+          ],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://www.beinconnect.com.tr/",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "ssport-plus",
+      "category_id": "sports-streaming",
+      "brand_name": "S Sport Plus",
+      "aliases": [
+        "S Sport Plus",
+        "SSport Plus"
+      ],
+      "keywords": [
+        "s sport plus",
+        "ssport plus"
+      ],
+      "feature_tags": [
+        "video",
+        "sports",
+        "live"
+      ],
+      "plans": [
+        {
+          "id": "ssport-plus-monthly",
+          "service_id": "ssport-plus",
+          "name": "Aylık",
+          "kind": "sports",
+          "monthly_equivalent_try": 299.0,
+          "billed_amount_try": 299.0,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "tv"
+          ],
+          "feature_tags": [
+            "video",
+            "sports",
+            "live"
+          ],
+          "eligibility_tags": [],
+          "notes": [],
+          "source_url": "https://www.ssportplus.com/",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "ssport-plus-annual",
+          "service_id": "ssport-plus",
+          "name": "Yıllık",
+          "kind": "sports",
+          "monthly_equivalent_try": 191.58,
+          "billed_amount_try": 2299.0,
+          "billing_period_months": 12,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "tv"
+          ],
+          "feature_tags": [
+            "video",
+            "sports",
+            "live"
+          ],
+          "eligibility_tags": [],
+          "notes": [
+            "Annual billing divided into monthly equivalent."
+          ],
+          "source_url": "https://www.ssportplus.com/",
           "source_type": "official",
           "is_active": true
         }
@@ -627,19 +1138,20 @@
     {
       "id": "google-drive",
       "category_id": "cloud-storage",
-      "brand_name": "Google Drive",
+      "brand_name": "Google One",
       "aliases": [
-        "Google Drive",
-        "Google One"
+        "Google One",
+        "Google Drive"
       ],
       "keywords": [
-        "google drive",
-        "google one"
+        "google one",
+        "google drive"
       ],
       "feature_tags": [
         "cloud",
         "storage",
-        "backup"
+        "backup",
+        "shared"
       ],
       "plans": [
         {
@@ -977,6 +1489,128 @@
       ]
     },
     {
+      "id": "microsoft-365",
+      "category_id": "productivity-suite",
+      "brand_name": "Microsoft 365",
+      "aliases": [
+        "Microsoft 365",
+        "Office 365"
+      ],
+      "keywords": [
+        "microsoft 365",
+        "office 365"
+      ],
+      "feature_tags": [
+        "productivity",
+        "office",
+        "cloud"
+      ],
+      "plans": [
+        {
+          "id": "microsoft-365-basic",
+          "service_id": "microsoft-365",
+          "name": "Basic",
+          "kind": "individual",
+          "monthly_equivalent_try": 58.25,
+          "billed_amount_try": 699.0,
+          "billing_period_months": 12,
+          "shareable_seats": 1,
+          "storage_gb": 100,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "windows",
+            "mac"
+          ],
+          "feature_tags": [
+            "productivity",
+            "office",
+            "cloud"
+          ],
+          "eligibility_tags": [],
+          "notes": [
+            "Annual billing divided into monthly equivalent."
+          ],
+          "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "microsoft-365-personal",
+          "service_id": "microsoft-365",
+          "name": "Personal",
+          "kind": "individual",
+          "monthly_equivalent_try": 191.58,
+          "billed_amount_try": 2299.0,
+          "billing_period_months": 12,
+          "shareable_seats": 1,
+          "storage_gb": 1000,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "windows",
+            "mac"
+          ],
+          "feature_tags": [
+            "productivity",
+            "office",
+            "cloud"
+          ],
+          "eligibility_tags": [],
+          "notes": [
+            "Annual billing divided into monthly equivalent."
+          ],
+          "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "microsoft-365-family",
+          "service_id": "microsoft-365",
+          "name": "Family",
+          "kind": "family",
+          "monthly_equivalent_try": 241.58,
+          "billed_amount_try": 2899.0,
+          "billing_period_months": 12,
+          "shareable_seats": 6,
+          "storage_gb": 6000,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "windows",
+            "mac"
+          ],
+          "feature_tags": [
+            "productivity",
+            "office",
+            "cloud",
+            "shared"
+          ],
+          "eligibility_tags": [
+            "shared-household"
+          ],
+          "notes": [
+            "Annual billing divided into monthly equivalent."
+          ],
+          "source_url": "https://www.microsoft.com/tr-tr/microsoft-365/buy/compare-all-microsoft-365-products",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
       "id": "proton-drive",
       "category_id": "cloud-storage",
       "brand_name": "Proton Drive",
@@ -1130,6 +1764,326 @@
             "Storage is combined household capacity."
           ],
           "source_url": "https://proton.me/pricing",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "dropbox",
+      "category_id": "productivity-suite",
+      "brand_name": "Dropbox",
+      "aliases": [
+        "Dropbox"
+      ],
+      "keywords": [
+        "dropbox"
+      ],
+      "feature_tags": [
+        "cloud",
+        "storage",
+        "collaboration"
+      ],
+      "plans": [
+        {
+          "id": "dropbox-plus",
+          "service_id": "dropbox",
+          "name": "Plus",
+          "kind": "storage",
+          "monthly_equivalent_try": 432.0,
+          "billed_amount_try": 432.0,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": 2000,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "windows",
+            "mac"
+          ],
+          "feature_tags": [
+            "cloud",
+            "storage",
+            "collaboration"
+          ],
+          "eligibility_tags": [],
+          "notes": [
+            "TRY value is an estimate converted from USD list pricing."
+          ],
+          "source_url": "https://www.dropbox.com/plans",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "dropbox-essentials",
+          "service_id": "dropbox",
+          "name": "Essentials",
+          "kind": "storage",
+          "monthly_equivalent_try": 720.0,
+          "billed_amount_try": 720.0,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": 3000,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "windows",
+            "mac"
+          ],
+          "feature_tags": [
+            "cloud",
+            "storage",
+            "collaboration"
+          ],
+          "eligibility_tags": [],
+          "notes": [
+            "TRY value is an estimate converted from USD list pricing."
+          ],
+          "source_url": "https://www.dropbox.com/plans",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "dropbox-business",
+          "service_id": "dropbox",
+          "name": "Business",
+          "kind": "team",
+          "monthly_equivalent_try": 648.0,
+          "billed_amount_try": 648.0,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": 9000,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "windows",
+            "mac"
+          ],
+          "feature_tags": [
+            "cloud",
+            "storage",
+            "collaboration"
+          ],
+          "eligibility_tags": [],
+          "notes": [
+            "TRY value is an estimate converted from USD list pricing (per seat)."
+          ],
+          "source_url": "https://www.dropbox.com/plans",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "google-workspace",
+      "category_id": "productivity-suite",
+      "brand_name": "Google Workspace",
+      "aliases": [
+        "Google Workspace",
+        "G Suite"
+      ],
+      "keywords": [
+        "google workspace",
+        "g suite"
+      ],
+      "feature_tags": [
+        "productivity",
+        "email",
+        "collaboration"
+      ],
+      "plans": [
+        {
+          "id": "google-workspace-business-starter",
+          "service_id": "google-workspace",
+          "name": "Business Starter",
+          "kind": "team",
+          "monthly_equivalent_try": 209.44,
+          "billed_amount_try": 209.44,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": 30,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "web",
+            "ios",
+            "android",
+            "windows",
+            "mac"
+          ],
+          "feature_tags": [
+            "productivity",
+            "email",
+            "collaboration"
+          ],
+          "eligibility_tags": [],
+          "notes": [
+            "TRY value is an estimate converted from EUR list pricing (per seat)."
+          ],
+          "source_url": "https://workspace.google.com/intl/tr/pricing.html",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "google-workspace-business-standard",
+          "service_id": "google-workspace",
+          "name": "Business Standard",
+          "kind": "team",
+          "monthly_equivalent_try": 418.88,
+          "billed_amount_try": 418.88,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": 2000,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "web",
+            "ios",
+            "android",
+            "windows",
+            "mac"
+          ],
+          "feature_tags": [
+            "productivity",
+            "email",
+            "collaboration"
+          ],
+          "eligibility_tags": [],
+          "notes": [
+            "TRY value is an estimate converted from EUR list pricing (per seat)."
+          ],
+          "source_url": "https://workspace.google.com/intl/tr/pricing.html",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "google-workspace-business-plus",
+          "service_id": "google-workspace",
+          "name": "Business Plus",
+          "kind": "team",
+          "monthly_equivalent_try": 665.28,
+          "billed_amount_try": 665.28,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": 5000,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "web",
+            "ios",
+            "android",
+            "windows",
+            "mac"
+          ],
+          "feature_tags": [
+            "productivity",
+            "email",
+            "collaboration"
+          ],
+          "eligibility_tags": [],
+          "notes": [
+            "TRY value is an estimate converted from EUR list pricing (per seat)."
+          ],
+          "source_url": "https://workspace.google.com/intl/tr/pricing.html",
+          "source_type": "official",
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "id": "notion",
+      "category_id": "productivity-suite",
+      "brand_name": "Notion",
+      "aliases": [
+        "Notion"
+      ],
+      "keywords": [
+        "notion"
+      ],
+      "feature_tags": [
+        "productivity",
+        "docs",
+        "collaboration"
+      ],
+      "plans": [
+        {
+          "id": "notion-plus",
+          "service_id": "notion",
+          "name": "Plus",
+          "kind": "productivity",
+          "monthly_equivalent_try": 360.0,
+          "billed_amount_try": 360.0,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "windows",
+            "mac"
+          ],
+          "feature_tags": [
+            "productivity",
+            "docs",
+            "collaboration"
+          ],
+          "eligibility_tags": [],
+          "notes": [
+            "TRY value is an estimate converted from USD list pricing."
+          ],
+          "source_url": "https://www.notion.so/pricing",
+          "source_type": "official",
+          "is_active": true
+        },
+        {
+          "id": "notion-business",
+          "service_id": "notion",
+          "name": "Business",
+          "kind": "team",
+          "monthly_equivalent_try": 648.0,
+          "billed_amount_try": 648.0,
+          "billing_period_months": 1,
+          "shareable_seats": 1,
+          "storage_gb": null,
+          "availability": [
+            "TR"
+          ],
+          "platform_tags": [
+            "ios",
+            "android",
+            "web",
+            "windows",
+            "mac"
+          ],
+          "feature_tags": [
+            "productivity",
+            "docs",
+            "collaboration"
+          ],
+          "eligibility_tags": [],
+          "notes": [
+            "TRY value is an estimate converted from USD list pricing (per seat)."
+          ],
+          "source_url": "https://www.notion.so/pricing",
           "source_type": "official",
           "is_active": true
         }
