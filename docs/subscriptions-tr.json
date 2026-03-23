@@ -1,7 +1,7 @@
 {
   "country": "TR",
   "currency": "TRY",
-  "last_updated": "2026-03-16T07:10:44Z",
+  "last_updated": "2026-03-23T07:04:19Z",
   "version": 3,
   "services": [
     {
@@ -237,7 +237,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Individual",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "ok"
           }
         },
@@ -278,7 +278,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Student",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "ok"
           }
         },
@@ -320,7 +320,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Family",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "ok"
           }
         }
@@ -619,7 +619,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Standard Annual",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "ok"
           }
         }
@@ -742,7 +742,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Aylık",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "ok"
           }
         },
@@ -783,7 +783,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "2.299 TL/yıl",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "ok"
           }
         }
@@ -933,7 +933,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "₺249",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "error:HTTPError"
           }
         }
@@ -1107,7 +1107,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "Aylık",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "ok"
           }
         },
@@ -1147,7 +1147,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "2.299TL",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "ok"
           }
         }
@@ -1205,7 +1205,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "50 GB",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "ok"
           }
         },
@@ -1244,7 +1244,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "200 GB",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "ok"
           }
         },
@@ -1283,7 +1283,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "2 TB",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "ok"
           }
         },
@@ -1322,7 +1322,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "6 TB",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "ok"
           }
         },
@@ -1361,7 +1361,7 @@
             "strategy": "regex",
             "regex": "([0-9]+(?:[.,][0-9]{1,3})?)\\s*(?:TL|₺|TRY)",
             "match_hint": "12 TB",
-            "last_checked_at": "2026-03-16T07:10:44Z",
+            "last_checked_at": "2026-03-23T07:04:19Z",
             "last_status": "ok"
           }
         }
